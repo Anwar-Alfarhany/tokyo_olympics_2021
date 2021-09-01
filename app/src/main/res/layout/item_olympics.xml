@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#E8D1AF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/team_id"
+            android:layout_width="150dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:text="team/NOC"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/noc_id"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:text="NOC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/team_id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/gold_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gold_medal"
+            app:layout_constraintEnd_toStartOf="@id/silver_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/team_id"
+            app:layout_constraintBottom_toTopOf="@+id/gold_id"/>
+
+        <TextView
+            android:id="@+id/gold_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:text="66"
+            app:layout_constraintEnd_toStartOf="@+id/silver_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gold_icon" />
+
+
+        <ImageView
+            android:id="@+id/silver_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/silver_medal"
+            app:layout_constraintStart_toEndOf="@id/gold_icon"
+            app:layout_constraintTop_toBottomOf="@id/team_id"
+            app:layout_constraintEnd_toStartOf="@id/bronze_icon"
+            app:layout_constraintBottom_toTopOf="@id/silver_id"/>
+
+        <TextView
+            android:id="@+id/silver_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:text="55"
+            app:layout_constraintStart_toEndOf="@id/gold_id"
+            app:layout_constraintTop_toBottomOf="@id/silver_icon"
+            app:layout_constraintEnd_toStartOf="@id/bronze_id"/>
+
+
+        <ImageView
+            android:id="@+id/bronze_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bronze_medal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/silver_icon"
+            app:layout_constraintTop_toBottomOf="@id/team_id"
+            app:layout_constraintBottom_toTopOf="@id/bronze_id"/>
+
+
+        <TextView
+            android:id="@+id/bronze_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="66"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/silver_id"
+            app:layout_constraintTop_toBottomOf="@id/bronze_icon" />
+
+        <ImageView
+            android:id="@+id/rank_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/rank"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rank_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gold_id" />
+
+        <TextView
+            android:id="@+id/rank_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="86"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/total_icon"
+            app:layout_constraintStart_toEndOf="@id/rank_icon"
+            app:layout_constraintTop_toBottomOf="@+id/gold_id" />
+
+        <ImageView
+            android:id="@+id/total_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/total"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/total_id"
+            app:layout_constraintStart_toEndOf="@id/rank_id"
+            app:layout_constraintTop_toBottomOf="@+id/gold_id" />
+
+        <TextView
+            android:id="@+id/total_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="113"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rank_total_icon"
+            app:layout_constraintStart_toEndOf="@id/total_icon"
+            app:layout_constraintTop_toBottomOf="@+id/gold_id" />
+
+        <ImageView
+            android:id="@+id/rank_total_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/rank_by_total"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/total_by_rank_id"
+            app:layout_constraintStart_toEndOf="@id/total_id"
+            app:layout_constraintTop_toBottomOf="@+id/gold_id" />
+
+        <TextView
+            android:id="@+id/total_by_rank_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="77"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rank_total_icon"
+            app:layout_constraintTop_toBottomOf="@+id/gold_id" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
