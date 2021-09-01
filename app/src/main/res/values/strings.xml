@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TokyoOlympics</string>
+    <string name="team_noc">team/NOC</string>
+    <string name="noc">NOC</string>
 </resources>

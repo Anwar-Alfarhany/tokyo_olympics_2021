@@ -4,41 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginVertical="8dp"
+    android:layout_marginVertical="@dimen/margin_8"
     android:layout_marginHorizontal="16dp"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="8dp"
-    app:cardBackgroundColor="#E8D1AF">
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/item_elevation"
+    app:cardBackgroundColor="@color/item_color">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp">
+        android:padding="@dimen/padding_8">
 
         <TextView
             android:id="@+id/team_id"
             android:layout_width="150dp"
             android:lines="1"
+            android:textSize="@dimen/item_recycler_text"
             android:ellipsize="end"
             android:textColor="@color/black"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:padding="4dp"
-            android:text="team/NOC"
+            android:layout_margin="@dimen/margin_8"
+            android:padding="@dimen/padding_4"
+            android:text="@string/team_noc"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
 
         <TextView
             android:id="@+id/noc_id"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_margin="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="@dimen/text_height"
+            android:layout_margin="@dimen/margin_8"
+            android:textSize="@dimen/item_recycler_text"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginEnd="@dimen/margin_16"
             android:textColor="@color/black"
-            android:padding="4dp"
-            android:text="NOC"
+            android:padding="@dimen/padding_4"
+            android:text="@string/noc"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/team_id"
             app:layout_constraintTop_toTopOf="parent" />
@@ -46,8 +48,8 @@
 
         <ImageView
             android:id="@+id/gold_icon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
             android:layout_marginTop="10dp"
             android:background="@drawable/gold_medal"
             app:layout_constraintEnd_toStartOf="@id/silver_icon"
@@ -59,9 +61,10 @@
             android:id="@+id/gold_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/margin_8"
             android:textColor="@color/black"
-            android:text="66"
+            android:textSize="@dimen/item_recycler_text"
+            android:text="39"
             app:layout_constraintEnd_toStartOf="@+id/silver_id"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/gold_icon" />
@@ -69,10 +72,10 @@
 
         <ImageView
             android:id="@+id/silver_icon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top"
             android:background="@drawable/silver_medal"
             app:layout_constraintStart_toEndOf="@id/gold_icon"
             app:layout_constraintTop_toBottomOf="@id/team_id"
@@ -83,9 +86,10 @@
             android:id="@+id/silver_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/margin_8"
+            android:textSize="@dimen/item_recycler_text"
             android:textColor="@color/black"
-            android:text="55"
+            android:text="41"
             app:layout_constraintStart_toEndOf="@id/gold_id"
             app:layout_constraintTop_toBottomOf="@id/silver_icon"
             app:layout_constraintEnd_toStartOf="@id/bronze_id"/>
@@ -93,10 +97,10 @@
 
         <ImageView
             android:id="@+id/bronze_icon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top"
             android:background="@drawable/bronze_medal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/silver_icon"
@@ -108,18 +112,19 @@
             android:id="@+id/bronze_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginTop="10dp"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_top"
             android:textColor="@color/black"
-            android:text="66"
+            android:textSize="@dimen/item_recycler_text"
+            android:text="33"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/silver_id"
             app:layout_constraintTop_toBottomOf="@id/bronze_icon" />
 
         <ImageView
             android:id="@+id/rank_icon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
             android:background="@drawable/rank"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/rank_id"
@@ -131,6 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:textSize="@dimen/item_recycler_text"
             android:text="86"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/total_icon"
@@ -139,9 +145,9 @@
 
         <ImageView
             android:id="@+id/total_icon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:background="@drawable/total"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:background="@drawable/medals"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/total_id"
             app:layout_constraintStart_toEndOf="@id/rank_id"
@@ -152,6 +158,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:textSize="@dimen/item_recycler_text"
             android:text="113"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/rank_total_icon"
@@ -160,8 +167,8 @@
 
         <ImageView
             android:id="@+id/rank_total_icon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
             android:background="@drawable/rank_by_total"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/total_by_rank_id"
@@ -173,6 +180,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:textSize="@dimen/item_recycler_text"
             android:text="77"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

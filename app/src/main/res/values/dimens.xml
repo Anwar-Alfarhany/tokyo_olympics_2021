@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_recycler_text">15sp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="card_radius">10dp</dimen>
+    <dimen name="item_elevation">10dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="text_width">50dp</dimen>
+    <dimen name="text_height">30dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="icon_width">25dp</dimen>
+    <dimen name="icon_height">25dp</dimen>
+    <dimen name="margin_start">10dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+</resources>
